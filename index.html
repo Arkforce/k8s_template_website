@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes Hub</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            z-index: 1000;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #326ce5, #00d8d6);
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .section {
+            padding: 4em;
+            text-align: center;
+        }
+
+        .section:nth-child(even) {
+            background: #f4f4f4;
+        }
+
+        .section:nth-child(odd) {
+            background: #ffffff;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#hero">Home</a>
+        <a href="#section1">What is Kubernetes?</a>
+        <a href="#section2">Features</a>
+        <a href="#section3">Use Cases</a>
+        <a href="#section4">Resources</a>
+        <a href="#footer">Contact</a>
+    </div>
+
+    <div class="hero" id="hero">
+        <h1>Kubernetes Hub</h1>
+    </div>
+
+    <div class="section" id="section1">
+        <h2>What is Kubernetes?</h2>
+        <p>Kubernetes is an open-source platform designed to automate deploying, scaling, and operating application containers. Originally developed by Google, Kubernetes is now maintained by the Cloud Native Computing Foundation.</p>
+    </div>
+
+    <div class="section" id="section2">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Automated rollouts and rollbacks:</strong> Kubernetes can automatically roll out changes to your application or its configuration, while monitoring application health to ensure all instances don’t fail at the same time.</li>
+            <li><strong>Service discovery and load balancing:</strong> Kubernetes can expose a container using the DNS name or their own IP address. If traffic to a container is high, Kubernetes can load balance and distribute the network traffic so that the deployment is stable.</li>
+            <li><strong>Storage orchestration:</strong> Kubernetes allows you to automatically mount the storage system of your choice, such as local storage, public cloud providers, and more.</li>
+            <li><strong>Self-healing:</strong> Restarts containers that fail, replaces containers, kills containers that don’t respond to your user-defined health check, and doesn’t advertise them to clients until they are ready to serve.</li>
+        </ul>
+    </div>
+
+    <div class="section" id="section3">
+        <h2>Use Cases</h2>
+        <p>Kubernetes is used by organizations of all sizes to manage their containerized applications in various environments:</p>
+        <ul>
+            <li><strong>Microservices:</strong> Kubernetes is ideal for deploying and managing microservices architecture.</li>
+            <li><strong>Cloud-native applications:</strong> Applications that are designed for cloud computing benefit from Kubernetes orchestration.</li>
+            <li><strong>Big data processing:</strong> Kubernetes can manage the complex workflows of big data processing.</li>
+            <li><strong>CI/CD pipelines:</strong> Continuous Integration and Continuous Delivery pipelines use Kubernetes to automate the deployment process.</li>
+        </ul>
+    </div>
+
+    <div class="section" id="section4">
+        <h2>Resources</h2>
+        <p>Explore the following resources to learn more about Kubernetes:</p>
+        <ul>
+            <li><a href="https://kubernetes.io/" target="_blank">Kubernetes Official Documentation</a></li>
+            <li><a href="https://www.cncf.io/" target="_blank">Cloud Native Computing Foundation (CNCF)</a></li>
+            <li><a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a></li>
+            <li><a href="https://www.youtube.com/c/kubernetesio" target="_blank">Kubernetes YouTube Channel</a></li>
+        </ul>
+    </div>
+
+    <footer id="footer">
+        <p>Contact us at <a href="mailto:info@kuberneteshub.com">info@kuberneteshub.com</a></p>
+    </footer>
+</body>
+</html>
